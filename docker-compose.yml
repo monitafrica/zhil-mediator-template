@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  zanemr-mediator:
+    container_name: demo-mediator
+    build: 
+      context: .
+    image: monitafrica/demo-mediator:latest
+    restart: always
+    ports:
+      - '8088:3000'
